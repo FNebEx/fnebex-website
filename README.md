@@ -15,4 +15,4 @@
   * Set up "data-item-url" correctly
 * Airtable
   * Integrate API
-[] Center text on home page.
+* Center text on home page.

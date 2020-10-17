@@ -4,11 +4,19 @@
   <div class="home-main">
     <div class="home-main-wrapper">
       <div class="container">
-        <h3>"Why is a raven like a writing desk?"</h3>
+        <h3>"why is a raven like a writing desk?"</h3>
+        <br>
+        {% for post in collections.post %}
+          <a href="{{ post.url }}">
+            <p>{{ post.data.title }}</p>
+          </a>          
+        {% endfor %}
       </div>
     </div>
   </div>
   {% else %}
-    {{ content }}
+    <div class="container">
+      {{ content }}
+    </div>
   {% endif %}
 </main>
