@@ -1,0 +1,14 @@
+<main>
+
+  {% if pageTitle == "Home" %}
+  <div class="home-main">
+    <div class="home-main-wrapper">
+      <div class="container">
+        <h3>"Why is a raven like a writing desk?"</h3>
+      </div>
+    </div>
+  </div>
+  {% else %}
+    {{ content }}
+  {% endif %}
+</main>
