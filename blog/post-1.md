@@ -12,3 +12,6 @@ tags: post
 trying out the first post and whatnot.  
 
 {{ title }}
+{{ date: "%B %d, %Y"}}
+
+I guess it's one of those things where I should try and write something meaningful.
