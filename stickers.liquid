@@ -4,4 +4,27 @@ cssPath: "../css/main.css"
 pageTitle: "Stickers"
 ---
 
-Here is the sticker page
+
+  <h4>All stickers are vinyl printed stickers. Choose quantity at checkout</h4>
+<div class="row">
+  {% for sticker in stickers %}
+    <div class="col-lg-3">
+      <div class="sticker-wrapper">
+        <div class="sticker-body">
+          <img class="img-fluid" src="{{ sticker.fields.Image[0].url }}" alt="">
+          <h5>{{ sticker.fields.Name }}</h5>
+          <h5>{{ sticker.fields.Price | append: "0" | | prepend: '$'}}</h5>
+          <h5>{{ sticker.id}}</h5>
+          <button class="btn snipcart-add-item"
+            data-item-id="{{ sticker.id }}"
+            data-item-name="{{ sticker.fields.Name }}"
+            data-item-price="{{ sticker.fields.Price | append: '0' }}"
+            data-item-url="https://fnebulousexists.netlify.app/stickers/index.html"
+            data-item-image="{{ sticker.fields.Image[0].url }}"
+          >Buy
+          </button>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

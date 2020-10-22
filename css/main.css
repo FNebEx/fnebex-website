@@ -18,7 +18,7 @@ header, main, footer {
 
 header {
   height: 400px;
-  margin-top: 56px;
+  /* margin-top: 56px; */
   background-color: #5478f9;
   color: #FDFDFF;
 }
@@ -48,4 +48,30 @@ main .home-main-wrapper{
   height: 100%;
   background-color: rgba(3, 25, 39, 0.7);
   color: white;
+}
+
+/* sticker card */
+.sticker-wrapper {
+  width: 100%;
+}
+
+.sticker-body {
+  width: 100%;
+  padding: 20px 10px;
+}
+
+.sticker-body > img {
+  height: 221px;
+  margin-bottom: 14px;
+}
+
+.sticker-body > h5 {
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.sticker-body > button {
+  background-color: #1968c2;
+  color: white;
+  width: 100%;
 }
